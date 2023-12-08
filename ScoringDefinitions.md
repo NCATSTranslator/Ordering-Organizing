@@ -12,7 +12,7 @@
 
 **Synonyms:** g-score	
 
-**Definition:** The **Confidence Score** combines the scores assigned to a given result by multiple reasoning agents. The Confidence Score invokes an algorithm that implements the following logic: if a given result is scored as non-zero by only one reasoning agent, then that score is thresholded as [0,1-epsilon], with epsilon = 0.001, and considered the Confidence Score; if a given result is scored as non-zero by multiple reasoning agents, then the scores are added together and thresholded as [0,1].
+**Definition:** The **Confidence Score** combines the scores assigned to a given result by multiple reasoning agents, with an expected range of [0,1] for each score. The Confidence Score invokes an algorithm that implements the following logic: if a given result is scored as non-zero by only one reasoning agent, then that score is thresholded as [0,1-epsilon], with epsilon = 0.001, and considered the Confidence Score; if a given result is scored as non-zero by multiple reasoning agents, then the scores are added together and thresholded as [0,1].
 
 ### Clinical Evidence Score
 
@@ -42,7 +42,7 @@
 
 **Synonyms:** Approval Status
 
-**Defintion:** **FDA Approval Status** is provided for predicted drug treatments and refers to the (Phase I, II, III, or IV) of US FDA approval. For the Novelty Score, FDA approval status is treated as a binary value of 0 (not approved) or 1 (approved). 
+**Defintion:** **FDA Approval Status** is provided for predicted drug treatments and refers to the clinical research phases required for US FDA approval of a new pharmaceutical or a new indication for an existing pharmaceutical. For the Novelty Score, FDA approval Status is treated as a binary value of 0 (FDA Approval for Marketing / FDA Clinical Research Phase 4) or 1 (FDA Clinical Research Phase 1, 2, or 3). Note that the source from which the FDA Approval Status is derived is ChEMBL (https://www.ebi.ac.uk/chembl/), which does not distinguish between FDA Approval for Marketing and FDA Clinical Research Phase 4.
 
 ![O O-graphic](https://github.com/NCATSTranslator/Ordering-Organizing/assets/26254388/34fd08ca-d9c9-45bf-8757-1045a3557555)
 
