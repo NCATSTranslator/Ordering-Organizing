@@ -38,11 +38,11 @@
 
 **Definition:** The **Molecular Similarity Factor** compares the chemical structure of a predicted drug treatment with that of established treatments, as asserted by curated knowledge sources. The Molecular Similarity Factor is calculated using a cheminformatics algorithm that applies a Jaccard coefficient to assess the pairwise similarity between two molecules. The factor is represented as a floating number between 0 and 1, where a molecular similarity factor of 1 indicates that two molecules are structurally identical.
 
-## FDA Approval Status		
+### FDA Approval Status		
 
 **Synonyms:** Approval Status
 
-**Defintion:** **FDA Approval Status** is provided for predicted drug treatments and refers to the clinical research phases required for US FDA approval of a new pharmaceutical or a new indication for an existing pharmaceutical. For the Novelty Score, FDA approval Status is treated as a binary value of 0 (FDA Approval for Marketing / FDA Clinical Research Phase 4) or 1 (FDA Clinical Research Phase 1, 2, or 3). Note that the source from which the FDA Approval Status is derived is ChEMBL (https://www.ebi.ac.uk/chembl/), which does not distinguish between FDA Approval for Marketing and FDA Clinical Research Phase 4.
+**Defintion:** **FDA Approval Status** is provided for predicted drug treatments and refers to the clinical research phases required for US FDA approval of a new pharmaceutical or a new indication for an existing pharmaceutical. For the Novelty Score, FDA approval Status is treated as a binary value of 0 (FDA Approval for Marketing / FDA Clinical Research Phase 4) or 1 (FDA Clinical Research Phase 1, 2, or 3). Note that the source from which the FDA Approval Status is derived is ChEMBL (https://www.ebi.ac.uk/chembl/), which does not distinguish between FDA Approval for Marketing and FDA Clinical Research Phase 4. If a predicted drug treatment is not in clinical trials, then FDA approval status is null and does not factor into the Novelty Score.
 
 ![O O-graphic](https://github.com/NCATSTranslator/Ordering-Organizing/assets/26254388/34fd08ca-d9c9-45bf-8757-1045a3557555)
 
