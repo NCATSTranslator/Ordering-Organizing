@@ -30,13 +30,13 @@
 
 **Synonyms:** Recency	
 
-**Definition:** The **Recency Factor** considers the number of supporting publications for a given result and the year of publication for the oldest supporting publication: these two values are combined into a sigmoid function to produce a value for recency of a given result. The Recency Factor is represented as a floating number between 0 and 1, where a recency factor near 1 indicates that a drug has very recent publication support.
+**Definition:** The **Recency Factor** considers the number of supporting publications for a given result and the year of publication for the oldest supporting publication: these two values are combined into a sigmoid function to produce a value for recency of a given result. The Recency Factor is represented as [0,1], where a recency factor near 1 indicates that a drug has very recent publication support.
 
 ### Molecular Similarity Factor	
 
 **Synonyms:** Molecular Similarity	
 
-**Definition:** The **Molecular Similarity Factor** compares the chemical structure of a predicted drug treatment with that of established treatments, as asserted by curated knowledge sources. The Molecular Similarity Factor is calculated using a cheminformatics algorithm that applies a Jaccard coefficient to assess the pairwise similarity between two molecules. The factor is represented as a floating number between 0 and 1, where a molecular similarity factor of 1 indicates that two molecules are structurally identical.
+**Definition:** The **Molecular Similarity Factor** compares the chemical structure of a predicted drug treatment with that of established treatments, as asserted by curated knowledge sources. The Molecular Similarity Factor is calculated using a cheminformatics algorithm that applies a Jaccard coefficient to assess the pairwise similarity between two molecules. The factor is represented as [0,1], where a molecular similarity factor of 1 indicates that two molecules are structurally identical.
 
 ### FDA Approval Status		
 
