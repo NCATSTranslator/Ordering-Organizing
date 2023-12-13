@@ -6,7 +6,7 @@
 
 **Synonyms:** Sugeno, Sugeno Integral, f-score
 
-**Definition:** The **Ordering Score** is calculated as the Sugeno Integral, which is based on the concepts of "fuzzy measures" and "fuzzy integral", as described in Fuzzy Set Theory. The Ordering Score is based on three scoring factors: **Confidence Score**; **Clinical Evidence Score**; and **Novelty Score**. The fuzzy integral is used to aggregate those factors. The Ordering Score or Sugeno considers the aggregated importance of combinations of the scoring factors, where higher values are treated with greater importance than lower values, and it intuits that factors with low scores are not as relevant or important to the aggregation than factors with high scores.
+**Definition:** The **Ordering Score** is calculated as the Sugeno Integral, which is based on the concepts of "fuzzy measures" and "fuzzy integral", as described in Fuzzy Set Theory. The Ordering Score is based on three scoring factors: **Confidence Score**; **Clinical Evidence Score**; and **Novelty Score**. The fuzzy integral is used to aggregate those factors. The Ordering Score or Sugeno considers the aggregated importance of combinations of the scoring factors, where higher values are treated with greater importance than lower values, and it intuits that factors with low scores are not as relevant or important to the aggregation than factors with high scores. The Ordering Score is represented as [0,1].
 
 ### Confidence Score
 
@@ -24,7 +24,7 @@
 
 **Synonyms:** Novelty	
 
-**Definition:** The **Novelty Score** is calculated using three factors: **Recency Factor**; **Molecular Similarity Factor**; and **FDA Approval Status**. The computation is performed for results that have been "inferred" by one or more reasoning agents; the computation is not performed for results that have been derived from curated knowledge sources and thus considered "fact". The Recency Factor refers to how current the publication support is for a given result; the Molecular Similarity Factor is based on chemical structure similarity between a predicted drug treatment and established drug treatments; and FDA Approval Status refers to the phase (Phase I, II, III, or IV) of US FDA approval for a predicted drug treatment. Note that the Novelty Score reflects the Translator System's assessment of the "novelty" of a given result, which may or may not align with a user's assessment of "novelty".
+**Definition:** The **Novelty Score** is calculated using three factors: **Recency Factor**; **Molecular Similarity Factor**; and **FDA Approval Status**. The computation is performed for results that have been "inferred" by one or more reasoning agents; the computation is not performed for results that have been derived from curated knowledge sources and thus considered "fact". The Recency Factor refers to how current the publication support is for a given result; the Molecular Similarity Factor is based on chemical structure similarity between a predicted drug treatment and established drug treatments; and FDA Approval Status refers to the phase (Phase I, II, III, or IV) of US FDA approval for a predicted drug treatment. Note that the Novelty Score reflects the Translator System's assessment of the "novelty" of a given result, which may or may not align with a user's assessment of "novelty". The Novelty Score is represented as [0,1].
 
 ### Recency Factor
 
