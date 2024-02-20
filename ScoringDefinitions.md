@@ -16,11 +16,11 @@
 
 **Definition:** The **Confidence Score** combines the scores assigned to a given result by multiple reasoning agents, with an expected range of [0,1] for each score. The Confidence Score invokes an algorithm that implements the following logic: if a given result is scored as non-zero by multiple reasoning agents, then the scores are added together and thresholded as [0,1]; if a given result is scored as non-zero by only one reasoning agent, then that score is thresholded as [0,1-epsilon], with epsilon = 0.001, and considered the Confidence Score.
 
-### Clinical Evidence Score
+### Clinical Information Score
 
-**Synonyms:** Evidence	
+**Synonyms:** Clinical	
 
-**Definition:** The **Clinical Evidence Score** is calculated as a weighted average of the natural logarithm of the odds ratio for an observed real-world association between a drug exposure and a disease diagnosis, as asserted by Translator's clinical knowledge sources. The Clinical Evidence Score is thresholded as [0,1).
+**Definition:** The **Clinical Information Score** is calculated as a weighted average of the natural logarithm of the odds ratio for an observed real-world association between a drug exposure and a disease diagnosis, as asserted by Translator's clinical knowledge sources. The Clinical Information Score is thresholded as [0,1).
 
 ### Novelty Score
 
