@@ -14,7 +14,7 @@
 
 **Synonyms:** g-score	
 
-**Definition:** The **Confidence Score** combines the scores assigned to a given result by multiple reasoning agents, with an expected range of [0,1] for each score. The Confidence Score invokes an algorithm that implements the following logic: if a given result is scored as non-zero by multiple reasoning agents, then the scores are added together and thresholded as [0,1]; if a given result is scored as non-zero by only one reasoning agent, then that score is thresholded as [0,1-epsilon], with epsilon = 0.001, and considered the Confidence Score.
+**Definition:** The **Confidence Score** combines the scores assigned to a given result by multiple reasoning agents, with an expected range of [0,1] for each score. The Confidence Score invokes an algorithm that implements the following logic: let `score(ara[i])` represent the score returned by ara `i` for a given answer, the confidence score is then given by `1 - \product_i (1 - score(ara[i]))`. In words, this treats `1 - score(ara[i])` as the "doubt" ARA `i` had in the answer and then considers each ARA is independent from the others, so multiplies these doubts together before subtracting from 1 to return a total confidence score. This is essentially equivalent to geometric (or lagoarithmic) pooling with constant weights as described [here](https://philsci-archive.pitt.edu/11349/1/OpinionPoolingReview.pdf).
 
 ### Clinical Evidence Score
 
