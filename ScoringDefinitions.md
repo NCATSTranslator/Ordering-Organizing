@@ -8,6 +8,8 @@
 
 **Definition:** The **Ordering Score** is calculated as the Sugeno Integral, which is based on the concepts of "fuzzy measures" and "fuzzy integral", as described in Fuzzy Set Theory. The Ordering Score is based on three scoring factors: **Confidence Score**; **Clinical Evidence Score**; and **Novelty Score**. The fuzzy integral is used to aggregate those factors. The Ordering Score or Sugeno considers the aggregated importance of combinations of the scoring factors, where higher values are treated with greater importance than lower values, and it intuits that factors with low scores are not as relevant or important to the aggregation than factors with high scores. The Ordering Score is scaled 0 to 5.
 
+**UI Concise Definition Display:** Multimodal calculation considering strength of relationships supporting the result. Scores range from 0 to 5 and may change as new results are added.
+
 ### Confidence Score
 
 **Synonyms:** g-score	
