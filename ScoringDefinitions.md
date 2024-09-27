@@ -20,7 +20,7 @@
 
 **Synonyms:** Clinical	
 
-**Definition:** The **Clinical Information Score** is calculated as a weighted average of the natural logarithm of the odds ratio for an observed real-world association between a drug exposure and a disease diagnosis, as asserted by Translator's clinical knowledge sources. The Clinical Information Score is thresholded as [0,1).
+**Definition:** The **Clinical Information Score** is calculated as a weighted average of the natural logarithm of the odds ratio for an observed real-world association between a drug exposure and a disease diagnosis, as asserted by Translator's clinical knowledge sources. The Clinical Information Score is thresholded as [0,1). For additional information, please see the associated [wiki page](https://github.com/NCATSTranslator/Translator-All/wiki/Translator-Clinical-Information-Score).
 
 ### Novelty Score
 
